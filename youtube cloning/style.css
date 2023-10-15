@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+}
+/* ---------top------- */
+.top{
+    background-color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0px 50px 0px 20px;
+}
+.topleft{
+    display: flex;
+    align-items: center;
+}
+.hamb{
+    width: 18px;
+    cursor: pointer;
+}
+.logo{
+    width: 100px;
+    margin: 0 35px;
+    cursor: pointer;
+}
+.topmiddle{
+    display:flex;
+}
+.topmiddle input{
+width: 37vw;
+height: 35px;
+border-radius: 30px;
+padding: 0 0 0 30px;
+background-color: black;
+border: gray solid 1px;
+outline: none;
+}
+.topmiddle .tmicon1{
+    width: 25px;
+    margin: 0 0 0 15px;
+    cursor: pointer;
+}
+.topmiddle div{
+    display: flex;
+}
+.lens{
+    width: 40px;
+    border: 1px solid gray;
+    background-color: gray;
+    margin-left: -20px;
+    border-radius: 0px 20px 20px 0;
+    padding: 4px 0 0 5px;
+    cursor: pointer;
+}
+.mic{
+    background-color: gray;
+    margin-left: 5px;
+    align-items: center;
+    border-radius: 50%;
+    padding: 0 3px;
+    cursor: pointer;
+}
+.tmicon{
+    height: 25px;
+}
+.topright{
+    display: flex;
+    justify-content: space-between;
+    width: 11%;
+}
+.o3{
+    width: 40px;
+    cursor: pointer;
+}
+/* -----whole------- */
+.whole{
+    display: flex;
+}
+/* --------left--------- */
+.left{
+    margin-top: 5%;
+    width: 14vw;
+    overflow-y: auto;
+}
+span{
+    display: flex;
+    align-items: center;
+    margin: 0 0 15px 0;
+}
+span img{
+    width: 25px;
+    margin:0 0 0 15px;
+    cursor: pointer;
+}
+p{
+    margin: 0 0 0 30px;
+    cursor: pointer;
+}
+hr{
+    margin-bottom: 20px;
+}
+h2{
+    font-weight: 100;
+    font-size:20px ;
+    margin:-4px 0 10px 15px;
+}
+/* ----------suggetions----- */
+.suggetions{
+    position: fixed;
+    display: flex;
+    top:10%;
+    background-color: rgba(0, 0, 0, 0.705);
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    margin: 0 5px;
+    border: 1px rgb(78, 76, 76) solid;
+    padding: 4px;
+    border-radius: 12%;
+    outline: none;
+    cursor: pointer;
+}
+/* -------ground------------- */
+.ground{
+    margin: 10% 0 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, 230px);
+}
+.brick .video{
+    border-radius: 10px;
+    width: 300px;
+    cursor: pointer;
+}
+.channellogo img{
+    width: 30px;
+    margin: 4px 0  0 4px;
+    cursor: pointer;
+}
+.down{
+    display: flex;
+}
+.name{
+    margin: 4px 0 0 10px;
+    cursor: pointer;
+}
+/* ------responsove------ */
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 65px;
+        margin-left: 10px;
+    }
+    .hamb{
+        width: 15px;
+        margin-left: -10px;
+    }
+    
+    .suggetions{
+        margin-top: -16px;
+        flex: 1;
+        overflow-x: auto;
+        overflow-x:hidden ;
+    }
+    .ground{
+        align-items: center;
+        display: block;
+        /* padding-left: -12px; */
+        margin: 28% 0 0 40px;
+    }
+    .brick{
+        width: 100vw;
+    }
+    .suggetions h3{
+        font-size: 15px;
+    }
+    .suggetions .box{
+        width: 100%;
+    }
+    .brick .video{
+        width: 80%;
+    }
+    .left span img{
+        position: fixed;
+        margin:44% 0 0 10px ;
+        width: 6%;
+    }
+    span{
+        border: solid black 1px;
+        height: 20px;
+    }
+    .topright{
+        display: none;
+    }
+    h6 img{
+        display: none;
+    }
+    .sub{
+        display: none;
+    }
+}
